@@ -1,0 +1,15 @@
+# Ignore the secret API key file (if you use one locally)
+.env
+
+# Ignore Python cache and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Ignore local VS Code settings
+.vscode/
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
