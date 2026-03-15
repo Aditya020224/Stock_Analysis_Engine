@@ -6,6 +6,10 @@ import numpy as np
 from flask import Flask, render_template, request
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+import tensorflow as tf
+# Add this line below your imports:
+tf.config.threading.set_inter_op_parallelism_threads(1)
+tf.config.threading.set_intra_op_parallelism_threads(1)
 
 app = Flask(__name__)
 
