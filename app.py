@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 # Fetch API Key from Render environment (Secure move!)
 API_KEY = os.environ.get('STOCK_API_KEY')
-MODEL_PATH = 'stock_model.h5'
+MODEL_PATH = 'stock_lstm_model.h5'
 
 # Load model once at startup
 model = load_model(MODEL_PATH)
