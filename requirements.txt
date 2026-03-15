@@ -5,3 +5,4 @@ numpy==1.23.5
 scikit-learn
 yfinance
 tensorflow-cpu==2.12.0
+curl_cffi
