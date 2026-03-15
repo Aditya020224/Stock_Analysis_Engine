@@ -6,6 +6,9 @@ import tensorflow as tf
 from flask import Flask, render_template, request
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+import keras
+# Add this line specifically:
+keras.config.enable_unsafe_deserialization()
 
 # Professional memory optimizations
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
