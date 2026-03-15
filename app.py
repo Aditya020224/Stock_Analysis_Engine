@@ -1,4 +1,6 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # Suppress scary TensorFlow warnings
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0' # Reduce memory overhead
 import yfinance as yf
 import numpy as np
 from flask import Flask, render_template, request
